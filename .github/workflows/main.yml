@@ -5,6 +5,6 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.actor == 'automate6500'
     steps:
     - run: echo Hello, world!
-      if: github.actor == 'automate6500'
